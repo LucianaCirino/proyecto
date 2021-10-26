@@ -1,0 +1,79 @@
+@mixin espaciado ($width) {
+    width: $width;
+    padding-left: 18%;
+    padding-top: 10%;
+}
+
+$parrafos:(
+    parrafoUno:black,
+    parrafoDos:rgb(191, 187, 187),
+    parrafoTres:white,
+);
+$parrafoUno: map-get($parrafos, parrafoUno);
+$parrafoDos: map-get($parrafos, parrafoDos);
+$parrafoTres: map-get($parrafos, parrafoTres);
+
+.parrafoUno{
+color:$parrafoUno;
+}
+.parrafoDos{
+color:$parrafoDos;
+}
+.parrafoTres{
+color:$parrafoTres;
+}
+.mainIndex{
+    grid-area: main;
+    padding-top: 5%;
+    padding-left: 10%;
+    align-content: center;
+    width: 50%;
+}
+.formulario{
+    grid-area: main;
+    padding-left: 2%;
+    color: $color-titulos;
+}
+h2{
+    font:$title-font;
+    color:$color-titulos;
+    padding-bottom: 3%;
+}
+p{
+    font-family: 'Nunito Sans', sans-serif;
+    color: lightgrey;
+    font-weight: bolder;
+    font-size: 120%;
+    padding-bottom: 2%;
+}
+.fotoCocineros{
+    height: 100%;
+    @include espaciado (170%);
+}
+.formatoTextos{
+   @include espaciado (150%);
+   min-width: 170%;
+}
+.formatoVideo{
+   @include espaciado (150%)
+}
+.tablaServicios{
+   font-weight: 600;
+   margin-top: 15%;
+   color:$color-titulos;
+   @include espaciado (200%)
+}
+.containerCarousel{
+   font-weight: 600;
+   margin-top: 15%;
+   color:$color-titulos;
+   @include espaciado (200%);
+    .carousel-inner{
+        .carousel-item{
+           img{
+               width: 620px;
+               height: 360px;
+            }
+        }
+   }
+}

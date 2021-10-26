@@ -1,0 +1,25 @@
+*{
+    padding: 0%;
+    margin: 0%; 
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/Gq.jpg);
+    background-color: #BB4430;
+    background-size: cover;
+    max-height: 100%;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.contenedorPadre{
+    display: grid;
+    grid-template-areas:  "header header header header"
+                            "main main main main"
+                            "main main main main"
+                            "main main main main"
+                            "footer footer footer footer";
+    grid-template-columns: 350px 350px 350px 350px;
+    grid-template-rows: 123px 350px 350px 350px;
+    grid-gap: 10px;
+}
