@@ -55,19 +55,19 @@ p{
    min-width: 170%;
 }
 .formatoVideo{
-   @include espaciado (150%)
+   @include espaciado (100%)
 }
 .tablaServicios{
    font-weight: 600;
-   margin-top: 15%;
-   color:$color-titulos;
-   @include espaciado (200%)
+   color:lightgray;
+   @include espaciado (200%);
+   font-size: 18px;
 }
 .containerCarousel{
    font-weight: 600;
    margin-top: 15%;
    color:$color-titulos;
-   @include espaciado (200%);
+   @include espaciado (170%);
     .carousel-inner{
         .carousel-item{
            img{
