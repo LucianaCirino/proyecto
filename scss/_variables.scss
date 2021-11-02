@@ -1,2 +1,6 @@
 $title-font: bold 40px 'Nunito Sans', sans-serif;
 $color-titulos:#ffae00;
+a{
+    text-decoration: none !important;
+    color:$color-titulos
+}
