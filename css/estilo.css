@@ -33,7 +33,6 @@ header {
       transform: rotate(360deg); }
   header h1 {
     width: 25%;
-    text-align: justify;
     margin-top: 1%;
     padding-right: 10%;
     color: #ffae00; }
@@ -170,7 +169,6 @@ footer {
     padding-top: 5%; }
   header h1 {
     width: 30%;
-    text-align: justify;
     margin-top: 1%;
     padding-right: 15%; }
   header h1 a {
@@ -296,7 +294,6 @@ footer {
     padding-top: 5%; }
   header h1 {
     width: 100%;
-    text-align: justify;
     margin-top: 1%;
     padding-right: 15%; }
   header h1 a {
@@ -431,7 +428,6 @@ footer {
     padding-top: 5%; }
   header h1 {
     width: 35%;
-    text-align: justify;
     margin-top: 1%;
     padding-right: 15%; }
   header h1 a {
