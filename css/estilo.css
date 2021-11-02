@@ -502,8 +502,10 @@ footer {
     padding-right: 10%;
     padding-top: 10%;
     padding-bottom: 10%; }
+  video {
+    width: 100% !important;
+    height: auto !important; }
   .formatoVideo {
-    width: 100%;
     align-items: center;
     padding-left: 15%;
     padding-top: 5%;
