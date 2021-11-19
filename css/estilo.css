@@ -13,7 +13,7 @@ a, a:hover, a:focus, a:active {
 
 body {
   background-image: url(../img/Gq.jpg);
-  background-color: #BB4430;
+  background-color: #444343;
   background-size: cover;
   max-height: 100%;
   background-attachment: fixed;
@@ -29,25 +29,27 @@ body {
 
 header {
   grid-area: header;
-  border-bottom: whitesmoke solid 3px; }
+  border-bottom: whitesmoke solid 1px; }
   header .logo {
     display: flex; }
   header .sombrero {
     float: right;
     transition: all 2s ease;
-    height: 85%;
+    height: 70%;
     padding-top: 15%; }
     header .sombrero:hover {
       transform: rotate(360deg); }
   header h1 {
-    width: 25%;
+    width: 40%;
     margin-top: 1%;
     padding-right: 10%;
-    color: #ffae00; }
+    color: #ffae00;
+    text-align: left;
+    padding-left: 1%; }
     header h1 a {
       color: #ffae00;
       font-weight: normal;
-      font-size: 35px;
+      font-size: 30px;
       text-decoration: none;
       text-transform: uppercase;
       text-decoration: underline;
@@ -58,12 +60,12 @@ header {
       color: #ffae00; }
   header ul {
     padding: 1.25rem;
-    text-align: center; }
+    text-align: right; }
     header ul li {
       list-style-type: none;
       display: inline-block;
       margin: 0.25rem 0.75rem;
-      text-align: center;
+      text-align: right;
       position: relative; }
     header ul a {
       color: #ffae00;
@@ -75,19 +77,20 @@ header {
         text-decoration: underline;
         background-color: #ffae00;
         color: #616161;
-        padding: 25px;
-        transform: scale(1.1, 1.1); }
+        padding: 10px;
+        transform: scale(1, 1); }
 
 .menu {
   background-color: #444343;
   list-style-type: none;
   padding: 0%;
-  font-size: 120%;
-  text-align: center;
-  flex-wrap: nowrap; }
+  font-size: 110%;
+  text-align: right;
+  flex-wrap: nowrap;
+  height: 65%; }
 
 .parrafoUno {
-  color: black; }
+  color: #e1c9c9; }
 
 .parrafoDos {
   color: #bfbbbb; }
@@ -98,7 +101,7 @@ header {
 .mainIndex {
   grid-area: main;
   padding-top: 5%;
-  padding-left: 10%;
+  padding-left: 5%;
   align-content: center;
   width: 50%; }
 
@@ -121,9 +124,8 @@ p {
 
 .fotoCocineros {
   height: 100%;
-  width: 170%;
-  padding-left: 18%;
-  padding-top: 10%; }
+  width: 50%;
+  float: right; }
 
 .formatoTextos {
   width: 150%;
@@ -167,13 +169,13 @@ footer {
     grid-template-rows: auto;
     grid-gap: 5px; }
   header {
-    border-bottom: whitesmoke solid 3px; }
+    border-bottom: whitesmoke solid 1px; }
   header .logo {
     display: flex; }
   header .sombrero {
     float: right;
-    height: 65px;
-    width: 65px;
+    height: 50px;
+    width: 50px;
     padding-top: 5%; }
   header h1 {
     width: 30%;
@@ -182,7 +184,7 @@ footer {
   header h1 a {
     color: #ffae00;
     font-weight: normal;
-    font-size: 1rem;
+    font-size: 0.5rem;
     text-transform: uppercase;
     text-decoration: underline;
     font-family: 'Pompiere', cursive; }
@@ -219,9 +221,9 @@ footer {
   #titulo {
     display: none; }
   .parrafoUno {
-    color: black; }
+    color: #e1c9c9; }
   .parrafoDos {
-    color: #767373; }
+    color: #bfbbbb; }
   .parrafoTres {
     color: white; }
   .mainIndex {
@@ -344,9 +346,9 @@ footer {
   #titulo {
     display: none; }
   .parrafoUno {
-    color: black; }
+    color: #e1c9c9; }
   .parrafoDos {
-    color: #767373; }
+    color: #bfbbbb; }
   .parrafoTres {
     color: white; }
   .mainIndex {

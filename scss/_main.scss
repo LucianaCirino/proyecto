@@ -5,7 +5,7 @@
 }
 
 $parrafos:(
-    parrafoUno:black,
+    parrafoUno:rgb(225, 201, 201),
     parrafoDos:rgb(191, 187, 187),
     parrafoTres:white,
 );
@@ -25,7 +25,7 @@ color:$parrafoTres;
 .mainIndex{
     grid-area: main;
     padding-top: 5%;
-    padding-left: 10%;
+    padding-left: 5%;
     align-content: center;
     width: 50%;
 }
@@ -48,7 +48,9 @@ p{
 }
 .fotoCocineros{
     height: 100%;
-    @include espaciado (170%);
+    width: 50%;
+    float:right;
+
 }
 .formatoTextos{
    @include espaciado (150%);

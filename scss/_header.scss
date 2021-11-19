@@ -1,27 +1,29 @@
 header{
     grid-area: header;
-    border-bottom: whitesmoke solid 3px;
+    border-bottom: whitesmoke solid 1px;
     .logo{
     display:flex;
     }
     .sombrero{
     float:right;
     transition: all 2s ease;
-    height: 85%;
+    height: 70%;
     padding-top: 15%;
     &:hover{
         transform: rotate(360deg);
     }
     }
     h1{
-         width:25%;
+         width:40%;
          margin-top:1%;
          padding-right: 10%; 
-         color: $color-titulos;  
+         color: $color-titulos; 
+         text-align: left; 
+         padding-left: 1%;
         a{
             color:$color-titulos;
             font-weight: normal;
-            font-size: 35px;
+            font-size: 30px;
             text-decoration: none;
             text-transform: uppercase;
             text-decoration: underline;
@@ -36,13 +38,13 @@ header{
     }
     ul{
         padding: 1.25rem;
-        text-align: center;
+        text-align:right;
         li{
             list-style-type: none;
             display: inline-block;
             margin: 0.25rem 0.75rem;
-            text-align: center;
-            position: relative; 
+            text-align: right;
+            position:relative; 
         }
         a{
             color: $color-titulos;
@@ -54,8 +56,8 @@ header{
                     text-decoration: underline;
                     background-color: $color-titulos;
                     color: #616161;
-                    padding: 25px;
-                    transform: scale(1.1, 1.1);
+                    padding: 10px;
+                    transform: scale(1, 1);
                  }
         }
     }
@@ -63,8 +65,9 @@ header{
 .menu{
     background-color: #444343;
     list-style-type: none;
-    padding: 0%;
-    font-size: 120%;
-    text-align: center;
+    padding:0%;
+    font-size: 110%;
+    text-align: right;
     flex-wrap: nowrap;
+    height: 65%;
 }

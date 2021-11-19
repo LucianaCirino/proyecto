@@ -12,13 +12,13 @@
       grid-gap: 5px; }
 
       header {
-        border-bottom: whitesmoke solid 3px; }
+        border-bottom: whitesmoke solid 1px; }
         header .logo {
           display: flex; }
         header .sombrero {
           float: right;
-          height: 65px;
-          width:65px;
+          height: 50px;
+          width:50px;
           padding-top: 5%; }
          
         header h1 {
@@ -28,7 +28,7 @@
           header h1 a {
             color: #ffae00;
             font-weight: normal;
-            font-size: 1rem;
+            font-size: 0.5rem;
             text-transform: uppercase;
             text-decoration: underline;
             font-family: 'Pompiere', cursive; }
@@ -72,10 +72,10 @@
           display: none;
         }
         .parrafoUno {
-          color: black; }
+          color: rgb(225, 201, 201); }
         
         .parrafoDos {
-          color: #767373; }
+          color: rgb(191, 187, 187), }
         
         .parrafoTres {
           color: white; }
@@ -118,7 +118,6 @@
           }
           
           .formatoVideo {
-           
             align-items: center;
             padding-left: 0%;
             padding-top: 5%;
@@ -158,10 +157,10 @@
       display: grid;
       grid-template-areas: "header"
       "header"
-     "main"
-     "main"
-     "main"
-     "footer";
+      "main"
+      "main"
+      "main"
+      "footer";
       grid-template-columns: auto;
       grid-template-rows: auto;
       grid-gap: 5px; }
@@ -227,10 +226,10 @@
           display: none;
         }
         .parrafoUno {
-          color: black; }
+          color: rgb(225, 201, 201), }
         
         .parrafoDos {
-          color: #767373; }
+          color: rgb(191, 187, 187), }
         
         .parrafoTres {
           color: white; }
