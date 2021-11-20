@@ -13,6 +13,7 @@ body{
     background-color: #444343;
     background-size: cover;
     max-height: 100%;
+    max-width: 100%;
     background-attachment: fixed;
     flex-wrap: wrap;
     flex-direction: column;
@@ -24,7 +25,15 @@ body{
                             "main main main main"
                             "main main main main"
                             "footer footer footer footer";
-    grid-template-columns: 350px 350px 350px 350px;
-    grid-template-rows: 123px 350px 350px 350px;
+    grid-template-columns: 455px auto;
+    grid-template-rows: 123px auto;
     grid-gap: 10px;
 }
+.parrafoUno {
+    color: rgb(225, 201, 201); }
+  
+  .parrafoDos {
+    color: rgb(191, 187, 187), }
+  
+  .parrafoTres {
+    color: white; }

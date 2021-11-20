@@ -1,4 +1,5 @@
 header{
+    width:100%;
     grid-area: header;
     border-bottom: whitesmoke solid 1px;
     .logo{
@@ -7,14 +8,14 @@ header{
     .sombrero{
     float:right;
     transition: all 2s ease;
-    height: 70%;
-    padding-top: 15%;
+    height: 80%;
+    padding-top: 10px;
     &:hover{
         transform: rotate(360deg);
     }
     }
     h1{
-         width:40%;
+         //width:40%;
          margin-top:1%;
          padding-right: 10%; 
          color: $color-titulos; 
@@ -30,44 +31,47 @@ header{
             font-family: 'Pompiere', cursive;
               
         }
-            &:hover{
-                transform: scale(1.0, 1.2);
+           /* &:hover{
+                transform: scale(1.0, 1.1);
                 text-decoration: none;
                 color:$color-titulos;
-            }
+            }*/
+    }
+    nav{
+          position: absolute;
+           right: 0;
     }
     ul{
         padding: 1.25rem;
-        text-align:right;
         li{
             list-style-type: none;
             display: inline-block;
-            margin: 0.25rem 0.75rem;
             text-align: right;
-            position:relative; 
+            margin-right: 1.5rem;
         }
         a{
             color: $color-titulos;
             text-decoration: none;
             display: inline-block;
-            padding: 20px;
+            padding: 5px;
             padding-top: 30%;
             &:hover{
                     text-decoration: underline;
                     background-color: $color-titulos;
                     color: #616161;
-                    padding: 10px;
+                    padding: 5px;
                     transform: scale(1, 1);
                  }
         }
     }
 }     
 .menu{
+    float:right;
     background-color: #444343;
     list-style-type: none;
     padding:0%;
     font-size: 110%;
     text-align: right;
     flex-wrap: nowrap;
-    height: 65%;
+    height: 55%;
 }

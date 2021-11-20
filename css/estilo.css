@@ -16,6 +16,7 @@ body {
   background-color: #444343;
   background-size: cover;
   max-height: 100%;
+  max-width: 100%;
   background-attachment: fixed;
   flex-wrap: wrap;
   flex-direction: column; }
@@ -23,11 +24,21 @@ body {
 .contenedorPadre {
   display: grid;
   grid-template-areas: "header header header header" "main main main main" "main main main main" "main main main main" "footer footer footer footer";
-  grid-template-columns: 350px 350px 350px 350px;
-  grid-template-rows: 123px 350px 350px 350px;
+  grid-template-columns: 455px auto;
+  grid-template-rows: 123px auto;
   grid-gap: 10px; }
 
+.parrafoUno {
+  color: #e1c9c9; }
+
+.parrafoDos {
+  color: #bfbbbb; }
+
+.parrafoTres {
+  color: white; }
+
 header {
+  width: 100%;
   grid-area: header;
   border-bottom: whitesmoke solid 1px; }
   header .logo {
@@ -35,17 +46,21 @@ header {
   header .sombrero {
     float: right;
     transition: all 2s ease;
-    height: 70%;
-    padding-top: 15%; }
+    height: 80%;
+    padding-top: 10px; }
     header .sombrero:hover {
       transform: rotate(360deg); }
   header h1 {
-    width: 40%;
     margin-top: 1%;
     padding-right: 10%;
     color: #ffae00;
     text-align: left;
-    padding-left: 1%; }
+    padding-left: 1%;
+    /* &:hover{
+                transform: scale(1.0, 1.1);
+                text-decoration: none;
+                color:$color-titulos;
+            }*/ }
     header h1 a {
       color: #ffae00;
       font-weight: normal;
@@ -54,40 +69,38 @@ header {
       text-transform: uppercase;
       text-decoration: underline;
       font-family: 'Pompiere', cursive; }
-    header h1:hover {
-      transform: scale(1, 1.2);
-      text-decoration: none;
-      color: #ffae00; }
+  header nav {
+    position: absolute;
+    right: 0; }
   header ul {
-    padding: 1.25rem;
-    text-align: right; }
+    padding: 1.25rem; }
     header ul li {
       list-style-type: none;
       display: inline-block;
-      margin: 0.25rem 0.75rem;
       text-align: right;
-      position: relative; }
+      margin-right: 1.5rem; }
     header ul a {
       color: #ffae00;
       text-decoration: none;
       display: inline-block;
-      padding: 20px;
+      padding: 5px;
       padding-top: 30%; }
       header ul a:hover {
         text-decoration: underline;
         background-color: #ffae00;
         color: #616161;
-        padding: 10px;
+        padding: 5px;
         transform: scale(1, 1); }
 
 .menu {
+  float: right;
   background-color: #444343;
   list-style-type: none;
   padding: 0%;
   font-size: 110%;
   text-align: right;
   flex-wrap: nowrap;
-  height: 65%; }
+  height: 55%; }
 
 .parrafoUno {
   color: #e1c9c9; }
@@ -100,7 +113,6 @@ header {
 
 .mainIndex {
   grid-area: main;
-  padding-top: 5%;
   padding-left: 5%;
   align-content: center;
   width: 50%; }
@@ -141,10 +153,9 @@ p {
 .tablaServicios {
   font-weight: 600;
   color: lightgray;
-  width: 200%;
+  width: 170%;
   padding-left: 18%;
-  padding-top: 10%;
-  font-size: 18px; }
+  padding-top: 10%; }
 
 .containerCarousel {
   font-weight: 600;
@@ -219,13 +230,7 @@ footer {
     text-align: center;
     flex-wrap: nowrap; }
   #titulo {
-    display: none; }
-  .parrafoUno {
-    color: #e1c9c9; }
-  .parrafoDos {
-    color: #bfbbbb; }
-  .parrafoTres {
-    color: white; }
+    display: block; }
   .mainIndex {
     grid-area: main;
     padding-top: 7%;
@@ -263,13 +268,12 @@ footer {
     padding-bottom: 5%; }
   .tablaServicios {
     font-weight: 600;
-    margin-top: 0%;
-    color: #ffae00;
-    width: 0%;
-    padding-left: 0%;
-    padding-right: 0%;
-    font-size: 0.7rem;
-    padding-top: 0%; }
+    color: lightgray;
+    padding-top: 10%;
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
+    font-size: 1rem; }
   .containerCarousel {
     font-weight: 600;
     margin-top: 15%;
@@ -287,6 +291,9 @@ footer {
     min-width: 0%; } }
 
 @media only screen and (max-width: 375px) {
+  nav {
+    position: absolute;
+    right: 0; }
   .contenedorPadre {
     display: grid;
     grid-template-areas: "header" "header" "main" "main" "main" "footer";
@@ -345,12 +352,6 @@ footer {
     flex-wrap: nowrap; }
   #titulo {
     display: none; }
-  .parrafoUno {
-    color: #e1c9c9; }
-  .parrafoDos {
-    color: #bfbbbb; }
-  .parrafoTres {
-    color: white; }
   .mainIndex {
     grid-area: main;
     padding-top: 7%;
@@ -388,13 +389,12 @@ footer {
     padding-bottom: 5%; }
   .tablaServicios {
     font-weight: 600;
-    margin-top: 10%;
-    color: #ffae00;
+    color: lightgray;
+    padding-top: 10%;
+    padding-right: 0px;
+    padding-left: 0px;
     width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-    font-size: 0.7rem;
-    padding-top: 10%; }
+    font-size: 1rem; }
   .containerCarousel {
     font-weight: 600;
     margin-top: 15%;
@@ -412,6 +412,9 @@ footer {
     min-width: 0%; } }
 
 @media only screen and (max-width: 768px) {
+  nav {
+    position: absolute;
+    right: 0; }
   body {
     background-image: url(../img/Gq.jpg);
     background-color: #BB4430;
@@ -425,16 +428,17 @@ footer {
     display: grid;
     grid-template-areas: "header" "header" "main" "main" "main" "footer";
     grid-template-columns: auto;
-    grid-template-rows: auto;
+    grid-template-rows: 80px 0px auto;
     grid-gap: 5px; }
   header {
+    width: 100%;
     border-bottom: whitesmoke solid 3px; }
   header .logo {
     display: flex; }
   header .sombrero {
     float: right;
-    height: 65px;
-    width: 65px;
+    height: 45px;
+    width: 45px;
     padding-top: 5%; }
   header h1 {
     width: 35%;
@@ -443,7 +447,7 @@ footer {
   header h1 a {
     color: #ffae00;
     font-weight: normal;
-    font-size: 1rem;
+    font-size: 0rem;
     text-transform: uppercase;
     text-decoration: underline;
     font-family: 'Pompiere', cursive; }
@@ -460,31 +464,18 @@ footer {
     color: #ffae00;
     text-decoration: none;
     display: inline-block;
+    font-size: 0.8rem;
     padding: 1px;
-    padding-top: 25%; }
-  header h1:hover {
-    transform: scale(1, 1.2); }
-  header ul a:hover {
-    text-decoration: underline;
-    background-color: #ffae00;
-    color: #616161;
-    padding: 1px;
-    transform: scale(1.1, 1.1); }
+    padding-top: 1%; }
   .menu {
     background-color: #444343;
     list-style-type: none;
     padding: 0%;
-    font-size: 1rem;
+    font-size: 0.6rem;
     text-align: center;
     flex-wrap: nowrap; }
   #titulo {
     display: block; }
-  .parrafoUno {
-    color: black; }
-  .parrafoDos {
-    color: #767373; }
-  .parrafoTres {
-    color: white; }
   .mainIndex {
     grid-area: main;
     padding-top: 7%;
@@ -522,13 +513,12 @@ footer {
     padding-bottom: 5%; }
   .tablaServicios {
     font-weight: 600;
-    margin-top: 10%;
-    color: #ffae00;
+    color: lightgray;
+    padding-top: 10%;
+    padding-right: 0px;
+    padding-left: 0px;
     width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-    font-size: 0.7rem;
-    padding-top: 10%; }
+    font-size: 1rem; }
   .containerCarousel {
     font-weight: 600;
     margin-top: 15%;

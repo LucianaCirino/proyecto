@@ -24,7 +24,6 @@ color:$parrafoTres;
 }
 .mainIndex{
     grid-area: main;
-    padding-top: 5%;
     padding-left: 5%;
     align-content: center;
     width: 50%;
@@ -62,8 +61,8 @@ p{
 .tablaServicios{
    font-weight: 600;
    color:lightgray;
-   @include espaciado (200%);
-   font-size: 18px;
+   @include espaciado (170%);
+  // font-size: 18px;
 }
 .containerCarousel{
    font-weight: 600;

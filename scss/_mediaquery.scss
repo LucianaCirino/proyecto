@@ -69,16 +69,9 @@
         flex-wrap: nowrap; }
 
         #titulo{
-          display: none;
+          display: block;
         }
-        .parrafoUno {
-          color: rgb(225, 201, 201); }
         
-        .parrafoDos {
-          color: rgb(191, 187, 187), }
-        
-        .parrafoTres {
-          color: white; }
         
         .mainIndex {
           grid-area: main;
@@ -126,13 +119,13 @@
           
           .tablaServicios {
             font-weight: 600;
-            margin-top: 0%;
-            color: #ffae00;
-            width: 0%;
-            padding-left: 0%;
-            padding-right:0%;
-            font-size:0.7rem;
-            padding-top: 0%; }
+            color:lightgray;
+            padding-top:10%;
+            padding-right:0px;
+            padding-left:0px;
+            width:100%;
+            font-size: 1rem;
+           }
           
           .containerCarousel {
             font-weight: 600;
@@ -153,6 +146,10 @@
 
 
   @media only screen and (max-width: 375px) {
+    nav{
+      position: absolute;
+       right: 0;
+}
     .contenedorPadre {
       display: grid;
       grid-template-areas: "header"
@@ -225,14 +222,7 @@
         #titulo{
           display: none;
         }
-        .parrafoUno {
-          color: rgb(225, 201, 201), }
         
-        .parrafoDos {
-          color: rgb(191, 187, 187), }
-        
-        .parrafoTres {
-          color: white; }
         
         .mainIndex {
           grid-area: main;
@@ -280,13 +270,13 @@
           
           .tablaServicios {
             font-weight: 600;
-            margin-top: 10%;
-            color: #ffae00;
-            width: 100%;
-            padding-left: 10%;
-            padding-right:10%;
-            font-size:0.7rem;
-            padding-top: 10%; }
+            color:lightgray;
+            padding-top:10%;
+            padding-right:0px;
+            padding-left:0px;
+            width:100%;
+            font-size: 1rem;
+   }
           
           .containerCarousel {
             font-weight: 600;
@@ -307,6 +297,10 @@
   }
 
   @media only screen and (max-width: 768px) {
+    nav{
+      position: absolute;
+       right: 0;
+}
     body{
       background-image: url(../img/Gq.jpg);
       background-color: #BB4430;
@@ -326,17 +320,19 @@
      "main"
      "footer";
       grid-template-columns: auto;
-      grid-template-rows: auto;
+      grid-template-rows: 80px 0px auto;
       grid-gap: 5px; }
 
       header {
-        border-bottom: whitesmoke solid 3px; }
+        width:100%;
+        border-bottom: whitesmoke solid 3px;
+      }
         header .logo {
           display: flex; }
         header .sombrero {
           float: right;
-          height: 65px;
-          width:65px;
+          height: 45px;
+          width:45px;
           padding-top: 5%; }
          
         header h1 {
@@ -346,7 +342,7 @@
           header h1 a {
             color: #ffae00;
             font-weight: normal;
-            font-size: 1rem;
+            font-size: 0rem;
             text-transform: uppercase;
             text-decoration: underline;
             font-family: 'Pompiere', cursive; }
@@ -365,38 +361,26 @@
             color: #ffae00;
             text-decoration: none;
             display: inline-block;
+            font-size:0.8rem;
             padding: 1px;
-            padding-top: 25%; }
+            padding-top: 1%; }
             
-            header h1:hover {
-        transform: scale(1, 1.2); }
+            
 
-            header ul a:hover {
-              text-decoration: underline;
-              background-color: #ffae00;
-              color: #616161;
-              padding: 1px;
-              transform: scale(1.1,1.1); }
+           
       
       .menu {
         background-color: #444343;
         list-style-type: none;
         padding: 0%;
-        font-size: 1rem;
+        font-size: 0.6rem;
         text-align: center;
         flex-wrap: nowrap; }
 
         #titulo{
           display: block;
         }
-        .parrafoUno {
-          color: black; }
-        
-        .parrafoDos {
-          color: #767373; }
-        
-        .parrafoTres {
-          color: white; }
+       
         
         .mainIndex {
           grid-area: main;
@@ -443,13 +427,13 @@
           
           .tablaServicios {
             font-weight: 600;
-            margin-top: 10%;
-            color: #ffae00;
-            width: 100%;
-            padding-left: 10%;
-            padding-right:10%;
-            font-size:0.7rem;
-            padding-top: 10%; }
+            color:lightgray;
+            padding-top:10%;
+            padding-right:0px;
+            padding-left:0px;
+            width:100%;
+            font-size: 1rem;
+          }
           
           .containerCarousel {
             font-weight: 600;
